@@ -27,7 +27,7 @@ export default function Home() {
           Oh and yeah, the bug which isn't a bug but that we fixed anyway has been patched, so yeah, enjoy.</p>
         </Alert>
         <img style={{ margin: "20px" }} src="professional-man-searching-laptop-data.jpg" />
-        <h1 style={{ fontSize: "2.2rem" }}>Entrusted with the personal data of</h1>
+        <h1 style={{ fontSize: "2.2rem" }}>Entrusted with the <span style={{ color: "red" }}><strong>insensitive*</strong></span> personal data of</h1>
         <h1 className="text-2xl">over <strong>6,036,900</strong> Singaporeans.</h1>
         <div className="flex flex-row items-center">
           <Button href="/records" style={{ marginTop: "20px" }} variant="primary" size="lg">Get Started</Button>
