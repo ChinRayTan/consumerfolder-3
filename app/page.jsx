@@ -11,8 +11,8 @@ export default function Home() {
       <div className={`flex flex-col items-center min-h-svh`} style={{ paddingBottom: "150px" }}>
         <Alert variant="info" style={{ marginTop: "30px" }}>
           <Alert.Heading>
-            <div className="flex flex-row items-center w-full">
-              <IoIosInformationCircle style={{ width: "30px", height: "30px", marginRight: "1%" }} />
+            <div className="flex flex-row items-center w-full font-semibold">
+              <IoIosInformationCircle style={{ width: "30px", height: "30px", marginRight: "1%", marginTop: "2px" }} />
               Patch 1.0.2
             </div>
           </Alert.Heading>

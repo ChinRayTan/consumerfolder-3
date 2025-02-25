@@ -43,8 +43,8 @@ export default function Records() {
                     <div className="flex flex-col items-center justify-center" style={{ marginBottom: "150px" }}>
                         <Alert variant="info" className="min-w-[30%]">
                             <Alert.Heading>
-                                <div className="flex flex-row items-center w-full">
-                                    <IoIosInformationCircle style={{ width: "30px", height: "30px", marginRight: "1%" }} />
+                                <div className="flex flex-row items-center w-full font-semibold">
+                                    <IoIosInformationCircle style={{ width: "30px", height: "30px", marginRight: "1%", marginTop: "2px" }} />
                                     Don't know where to start? Some examples:
                                 </div>
                             </Alert.Heading>
@@ -171,34 +171,33 @@ function Record({ targetName }) {
                                     </div>
                                     <div className="flex flex-row items-start w-full h-full">
                                         <div className="flex flex-col justify-center items-start h-full w-1/4">
-                                            <h2>Name:</h2>
-                                            <br />
-                                            <h2>NRIC:</h2>
-                                            <br />
-                                            <h2>School:</h2>
-                                            <br />
-                                            <h2>Course:</h2>
-                                            <br />
-                                            <h2>Year:</h2>
-                                            <br />
-                                            <h2>GPA:</h2>
+                                            <h2>Name:
+                                            <br /><br />
+                                            NRIC:
+                                            <br /><br />
+                                            School:
+                                            <br /><br />
+                                            Course:
+                                            <br /><br />
+                                            Year:
+                                            <br /><br />
+                                            GPA:</h2>
                                         </div>
                                         <div className="flex flex-col justify-center items-start h-full w-full">
-                                            <h2>{names[actualName].Name}</h2>
-                                            <br />
+                                            <h2>{names[actualName].Name}
+                                            <br /><br />
                                             <div className={actualName === "Chin Ray" ? "blur-lg" : ""}>
-                                                {
-                                                    <h2>{names[actualName].NRIC}</h2>
-                                                }
-                                                <br />
-                                                <h2>{names[actualName].School}</h2>
-                                                <br />
-                                                <h2>{names[actualName].Course}</h2>
-                                                <br />
-                                                <h2>{names[actualName].Year}</h2>
-                                                <br />
-                                                <h2>{names[actualName].GPA}</h2>
+                                                <h2>{names[actualName].NRIC}
+                                                <br /><br />
+                                                {names[actualName].School}
+                                                <br /><br />
+                                                {names[actualName].Course}
+                                                <br /><br />
+                                                {names[actualName].Year}
+                                                <br /><br />
+                                                {names[actualName].GPA}</h2>
                                             </div>
+                                            </h2>
                                         </div>
                                     </div>
                                     <PremiumBlock visibility={actualName === "Chin Ray"} />
