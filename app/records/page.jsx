@@ -139,7 +139,7 @@ function Record({ targetName }) {
                         <div>
                             <Alert variant="danger" style={{ marginLeft: "10%", marginRight: "10%" }}>
                                 <Alert.Heading>
-                                    <div className="flex flex-row items-center w-full">
+                                    <div className="flex flex-row items-center w-full font-semibold">
                                         <MdError style={{ width: "30px", height: "30px", marginRight: "1%", marginTop: "3px" }} />
                                         Warning
                                     </div>
