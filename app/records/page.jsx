@@ -170,34 +170,23 @@ function Record({ targetName }) {
                                         <img src={names[actualName].picture} className="w-md h-md" style={{ maxWidth: "200px" }} />
                                     </div>
                                     <div className="flex flex-row items-start w-full h-full">
-                                        <div className="flex flex-col justify-center items-start h-full w-1/4">
-                                            <h2>Name:
-                                            <br /><br />
-                                            NRIC:
-                                            <br /><br />
-                                            School:
-                                            <br /><br />
-                                            Course:
-                                            <br /><br />
-                                            Year:
-                                            <br /><br />
-                                            GPA:</h2>
+                                        <div className="flex flex-col justify-center items-start h-full w-1/4 gap-[30px]">
+                                            <h2>Name:</h2>
+                                            <h2>NRIC:</h2>
+                                            <h2>School:</h2>
+                                            <h2>Course:</h2>
+                                            <h2>Year:</h2>
+                                            <h2>GPA:</h2>
                                         </div>
-                                        <div className="flex flex-col justify-center items-start h-full w-full">
-                                            <h2>{names[actualName].Name}
-                                            <br /><br />
-                                            <div className={actualName === "Chin Ray" ? "blur-lg" : ""}>
-                                                <h2>{names[actualName].NRIC}
-                                                <br /><br />
-                                                {names[actualName].School}
-                                                <br /><br />
-                                                {names[actualName].Course}
-                                                <br /><br />
-                                                {names[actualName].Year}
-                                                <br /><br />
-                                                {names[actualName].GPA}</h2>
+                                        <div className="flex flex-col justify-center content-between items-between h-full w-full gap-[30px]">
+                                            <h2>{names[actualName].Name}</h2>
+                                            <div className={`flex flex-col ${actualName === "Chin Ray" ? "blur-lg" : ""} gap-[30px]`}>
+                                                <h2>{names[actualName].NRIC}</h2>
+                                                <h2>{names[actualName].School}</h2>
+                                                <h2>{names[actualName].Course}</h2>
+                                                <h2>{names[actualName].Year}</h2>
+                                                <h2>{names[actualName].GPA}</h2>
                                             </div>
-                                            </h2>
                                         </div>
                                     </div>
                                     <PremiumBlock visibility={actualName === "Chin Ray"} />
